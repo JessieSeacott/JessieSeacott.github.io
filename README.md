@@ -18,4 +18,4 @@ jessijade94@gmail.com
 
 https://www.linkedin.com/in/jjritter/
 
-## Please check back as I will continue to update this portfolio throughout my learning!
+### Please check back as I will continue to update this portfolio throughout my learning!
