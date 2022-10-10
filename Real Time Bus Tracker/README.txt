@@ -4,7 +4,7 @@ Project description:
 This project shows the bus stops on the route from Traverse City, Michigan, to Detroit, Michigan.
 Originally this project was an assignment from Dr. Sanchez, finishing the javascript to show the bus 
 stops from MIT's campus to Harvard's campus in Cambridge, Massachusetts. From there, I changed the
-style of the map, from a traditional road map to a satalite scan and masked over all counrties but
+style of the map, from a traditional road map to a satellite scan and masked over all counrties but
 America with a slightly transparent white cover. I also changed the route to traveling to Detroit from 
 Traverse City using data from Greyhound's website. I chose to skip stops that were within the same
 city as previous stops. 
