@@ -1,8 +1,3 @@
-
-/* Website fonts for my convienence:
-    font-family: 'Bitter', serif;
-    font-family: 'Source Sans Pro', sans-serif;
-*/
 body {
     padding:0; 
     margin:0;
@@ -12,13 +7,14 @@ body {
 /*Grid creation*/
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(50px, auto);
     grid-template-areas: 
-      "header header header header header header"
-      "title  title  title  video  video  video"
-      "pic    pic    bio    bio    bio    bio"
-      "footer footer footer footer footer footer";
+      "header header    header"
+      "pacmen pacmenImg pacmenImg"
+      "eyes   eyesImg   eyesImg"
+      "bus    busImg    busImg"
+      "footer footer    footer";
     grid-gap: 0px;
     padding:0; 
     margin:0;
@@ -33,66 +29,102 @@ body {
     color: black;
 }
 
-.title {
-    grid-area: title;
-    font-family: 'Bitter', serif;
-    font-size: 500%;
-    text-align: center;
-    padding: 80px;
-    line-height: 1;
-}
-
-mark.name {
-    color: #436fb6;
-    background-color: #e7f2d4;
-}
-
-.loading {
-    color: #71c6a5;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 30%;
-    background-color: #e7f2d4;
-    line-height: normal;
-}
-
-.spinner-border {
-    color: #71c6a5;
-    font-size: 20%;
-}
-
-.video {
-    grid-area: video;
-    padding: 10px;
-}
-iframe {
-    border-width: 15px;
-    border: #436fb6;
-}
-
-.pic {
-    grid-area: pic;
-    margin: auto;
-    display: block;
+.myName {
+    float: right;
+    padding-right: 20px;
 }
 
 img {
-    width: 400px;
+    border-radius: 10px;
+    max-width: 80%;
     height: auto;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: auto;
+    margin-top: 20px;
 }
 
-.bio {
-    grid-area: bio;
-    text-align: left;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 140%;
-    padding: 30px;
-    padding-right: 50px;
+.pacmen {
+    grid-area: pacmen;
+    padding: 40px;
+    padding-right: 0;
 }
-ol { 
-    list-style-type: disc;
+
+.pacmen a {
+    float: right;
+}
+
+.pacmenImg {
+    grid-area: pacmenImg;
+}
+
+.pacmenTitle {
+    font-family: 'Bitter', serif;
     color: #436fb6;
+    font-size: 200%;
+    text-align: right;
 }
-li span {color:black;}
+
+.pacmenP {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 120%;
+    text-align: right;
+}
+
+.eyes {
+    grid-area: eyes;
+    padding: 40px;
+    padding-right: 0;
+}
+
+.eyes a {
+    float: right;
+}
+
+.eyesImg {
+    grid-area: eyesImg;
+}
+
+.eyesTitle {
+    font-family: 'Bitter', serif;
+    color: #436fb6;
+    font-size: 200%;
+    text-align: right;
+}
+
+.eyesP {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 120%;
+    text-align: right;
+}
+
+.bus {
+    grid-area: bus;
+    padding: 40px;
+    padding-right: 0;
+}
+
+.bus a {
+    float: right;
+}
+
+.busImg {
+    grid-area: busImg;
+}
+
+.busTitle {
+    font-family: 'Bitter', serif;
+    color: #436fb6;
+    font-size: 200%;
+    text-align: right;
+}
+
+.busP {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 120%;
+    text-align: right;
+}
 
 .footer {
     grid-area: footer;
