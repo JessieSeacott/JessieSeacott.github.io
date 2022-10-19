@@ -45,6 +45,7 @@ body {
 mark.name {
     color: #436fb6;
     background-color: #e7f2d4;
+    padding: 0;
 }
 
 .loading {
